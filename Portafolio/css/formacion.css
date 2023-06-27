@@ -1,0 +1,12 @@
+body {
+    background-color: var(--background-azul-claro);
+}
+
+.titulo__formacion {
+    font-family: "Krub";
+    font-weight: 700;
+}
+
+.status__curso {
+    color: var(--color-gris-claro);
+}

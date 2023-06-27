@@ -1,0 +1,31 @@
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skill, .skill_blanda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-azul-claro);
+}
+
+.nombre__skill {
+    font-family: "Krub";
+    font-weight: 600;
+    text-align: center;
+}
+
+.skill_blanda {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px){
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

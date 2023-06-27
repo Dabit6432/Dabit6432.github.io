@@ -1,0 +1,52 @@
+.banner-sobre-mi {
+    background-image: url(../img/banner-sobre-mi.jpg);
+    background-size: cover;
+    height: 35rem;
+}
+
+.titulo_seccion {
+    text-align: center;
+    font-family: "Krub";
+    font-size: 1.5rem;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.imagen_sobre_mi {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+}
+
+
+
+.texto_sobre_mi {
+    width: 50%;
+    font-family: "DM Sans";
+    line-height: normal;
+    font-weight: 500;
+    
+}
+
+
+@media screen and (max-width: 768px){
+    .banner-sobre-mi {
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: 60vw;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .texto_sobre_mi {
+        width: 100%;
+    }
+}

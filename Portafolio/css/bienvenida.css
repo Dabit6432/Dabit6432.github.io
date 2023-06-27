@@ -1,0 +1,109 @@
+.navegacion {
+    background-color: var(--background-azul);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navegacion__enlace {
+    text-decoration: none;
+    font-family: 'Krub';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--letras-verdes);
+}
+
+.navegacion__enlace:hover {
+    color: var(--color-blanco);
+    text-decoration: underline;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18%;
+    margin-bottom: 18%;
+}
+
+.titulo__bienvenida {
+    text-align: center;
+    font-family: "Pacifico";
+    font-size: 2.5rem;
+}
+
+.texto__bienvenida {
+    margin: 0 10rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'DM Sans';
+    font-weight: 400;
+}
+
+.padre__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.footer {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f618d;
+    height: 10rem;
+}
+
+.texto__derechos {
+    color: var(--color-blanco);
+    font-family: 'Krub';
+    font-weight: bold;
+}
+
+.red__social {
+    text-decoration: none;
+}
+
+.navegacion__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+    .texto__bienvenida {
+        margin: 0 2rem;
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: 'DM Sans';
+        font-weight: 400;
+    }
+
+    .principal {
+        margin-top: 45%;
+        margin-bottom: 20%;
+    }
+
+    .footer {
+        margin-top: 45vw;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .navegacion {
+        flex-direction: column;
+    }
+
+    .navegacion__enlace {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .texto__derechos {
+        font-size: 12px;
+    }
+}

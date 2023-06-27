@@ -1,0 +1,13 @@
+:root {
+    --background-azul: #1f618d;
+    --letras-verdes: #27ae60;
+    --letras-naranjas:  #dc7633;    ;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro:#99a3a4;
+    --background-azul-claro:aliceblue;
+}
+
+.contenedor {
+    margin: auto 6rem;
+}

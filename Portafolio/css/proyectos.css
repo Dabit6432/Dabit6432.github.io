@@ -1,0 +1,65 @@
+.proyecto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto__imagen {
+    width: 50vw;
+}
+
+.proyecto__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto__titulo {
+    font-family: 'Krub';
+    font-weight: 700;
+}
+
+.boton__repositorio {
+    text-decoration: none;
+    background-color: var(--color-negro);
+    color: var(--letras-naranjas);
+    padding: .5rem;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    border-radius: 2rem;
+}
+
+.boton__demo {
+    text-decoration: none;
+    background-color: var(--background-azul);
+    color: var(--letras-verdes);
+    padding: .5rem;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .proyecto {
+        flex-direction: column;
+    }
+
+    .proyecto__imagen {
+        width: 100vw;
+    }
+
+    .boton__repositorio {
+        width: 1rem;
+        font-size: 10px;
+    }
+
+    .boton__demo {
+        width: 1rem;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,87 @@
+.principal__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+input, textarea{
+    width: 40vw;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: solid 2px var(--color-negro);
+}
+
+textarea {
+    height: 20rem;
+    resize: none;
+}
+
+.campo--invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+  .campo--invalid .input {
+    border: 1px solid red;
+    border-radius: 7px;
+  }
+  
+  .campo--invalid .input-label {
+    color: red;
+  }
+  
+  .input-message-error {
+    display: none;
+  }
+  
+  .campo--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  #btn-enviar {
+    background-color: var(--letras-verdes);
+    border: solid 2px var(--background-azul);
+    border-radius: 2rem;
+    width: 50%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    color: var(--background-azul);
+    text-transform: uppercase;
+    font-family: "Krub";
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  #btn-enviar:hover {
+    border: solid 4px var(--background-azul);
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 768px){
+    input, textarea{
+        width: 70vw;
+        padding: .5rem;
+        border-radius: 1rem;
+        border: solid 2px var(--color-negro);
+    }
+  }
